@@ -1,0 +1,51 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+body {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/image/Artz\ Now\ _\ 1675383921444257793.jpeg");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+}
+h1 {
+    color: white;
+    font-size: 128px;
+    font-family: "Anton", sans-serif;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 70%;
+    text-align: center;
+    justify-content: center;
+}
+@media screen and (max-width: 720px) {
+    .title > h1 {
+        font-size: 64px;
+        transition: 0.3s;
+    }
+}
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+button {
+    width: 183px;
+    height: 48px;
+    border-radius: 40px 40px 40px 40px;
+    border: none;
+    font-size: 20px;
+    font-family: "Anton", sans-serif;
+    font-weight: bold;
+    background-color: #158C94;
+    cursor: pointer;
+    color: white;
+}
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="../src/home-page.css">
+    <script src="../script/index.js" defer></script>
+    <script src="../script/homePage.js" defer></script>
+    <script src="../script/crud.js" defer></script>
+</head>
+<body>
+
+<div id="html-container">
+    
+    <!-- header  -->
+    <header>
+        <div class="header-element">
+            <time-element></time-element>
+            <div class="profile">
+                <div id="profile-container">
+                    <img id="profile-pic" src="../assets/image/profile.jpg" alt="">
+                </div>
+                <h3>Tiki</h3>
+            </div>
+        </div>
+        <div class="calendar-element">
+            <calendar-element></calendar-element>
+        </div>
+    </header>
+
+    <!-- crud -->
+    <div id="body-container">
+        <div class="form_container">
+
+            <form class="create_form">
+                <input type="text" class="dairy" placeholder="Dairy">
+                <input type="text" class="note" placeholder="Note">
+                <button type="button" onclick="add()">Create</button>
+            </form>
+            <form class="update_form">
+                <input type="text" hidden class="id">
+                <input type="text" class="new_dairy">
+                <input type="text" class="new_note">
+                <button type="button" onclick="update()">update</button>
+            </form>
+
+            <div class="add_div">
+                <button onclick="create()">Add +</button>
+            </div>
+
+            <table>
+                <thead class="title">
+                    <th>Dairy for today :</th>
+                    <th>Note :</th>
+                    <th>Option :</th>
+                </thead>
+
+                <tbody class="data_table"></tbody>
+            </table>
+        </div>
+    </div>
+    
+    <!-- footer  -->
+    <footer-element></footer-element>
+</div>
+
+</body>
+</html>
